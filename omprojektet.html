@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staden vid vattnet</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel = "icon" href =  
+"img/SignaturPE.svg" 
+        type = "image/x-icon"> 
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="signature">Prince Eugens Signature</a>
+      <a href="#" class="hide-desktop">
+
+    <nav>
+        <a href="#" class="hide-desktop">
+        <img src="img/ham_menu.svg" alt="toggle menu" class="menu" id="menu">
+    </a>
+      <ul class="show-desktop hide-mobile" id="nav">
+        <li id="exit" class="exit-btn hide-desktop">
+            <img src="img/exit_menu.png" alt="exit menu">
+        </li>
+        <li><a href="stadenvidvattnet.html">Väggmålningen</a></li>
+        <li><a href="publicdomainochar.html">Public Domain och AR</a></li>
+        <li><a href="index.html">Galleri</a></li>
+      </ul>
+      </nav>
+    </header>
+
+    <a href="index.html" class="header-title">
+      <h2>Om projektet</h2></a
+    >
+
+    <figure class="about-project">
+        <figcaption> <p>
+            Den här webbsidan skapades av mig, Björn Hafstad, i samband med ett projektarbete till kursen
+            Digitalisering av
+            kulturarvsmaterial vid Högskolan i Borås. Kursen är en del av masterprogrammet i Digital humaniora
+            vid
+            Göteborgs universitet. <br>
+            Jag utförde mitt projektarbete i <a href="http://www.skissernasmuseum.se" class="skissernas-link">Skissernas museums magasin</a> i Lund. Här fick jag
+            vägledning av muséets arkivarie Annie Lindberg och fotograf Peter Frodin.
+            Jag
+            fick följa skissernas färd genom digitaliseringsprocessen fram till deras slutstation - arkiveringen
+            i
+            specialdesignade, giftfria förvaringsboxar, där de kan bevaras i gott skick över en svindlande
+            tidsrymd.
+            <br>
+            Som kontrast kan en fråga sig hur länge denna hemsida och dess inbäddade bildfiler kommer bevaras,
+            sett till den
+            lika
+            svindlande digitala utvecklingen, där nya filformat ersätter gamla och kodsträngar utdateras och
+            bryts.
+        </p>
+      </figcaption>
+      <div class="projectimages">
+        <img src="img/sinarroom.jpg" alt="Sinar room">
+    </div>
+      </figure>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+
+  </body>
+</html>

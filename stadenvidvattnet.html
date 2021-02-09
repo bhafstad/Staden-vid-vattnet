@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staden vid vattnet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel = "icon" href =  
+    "img/SignaturPE.svg" 
+            type = "image/x-icon"> 
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="signature">Prince Eugens Signature</a>
+      <a href="#" class="hide-desktop">
+
+    <nav>
+        <a href="#" class="hide-desktop">
+        <img src="img/ham_menu.svg" alt="toggle menu" class="menu" id="menu">
+    </a>
+      <ul class="show-desktop hide-mobile" id="nav">
+        <li id="exit" class="exit-btn hide-desktop">
+            <img src="img/exit_menu.png" alt="exit menu">
+        </li>
+        <li><a href="index.html">Galleri</a></li>
+        <li><a href="publicdomainochar.html">Public Domain och AR</a></li>
+ <li><a href="omprojektet.html">Om projektet</a></li>
+      </ul>
+      </nav>
+    </header>
+
+    <a href="index.html" class="header-title"><h1>Prins Eugen</h1>
+      <h3 class="underline"></h3>
+      <h2>Staden vid vattnet</h2></a
+    > 
+    <figure class="figure-mural">
+      <div><img src="img/EugenPainting.jpg" alt="Eugen painting the fresco"></div>
+      <figcaption class="about-mural">      <p>
+          <span class="emphasize">1916</span> påbörjade Prins Eugen arbetet med en gåva till Stockholm stad - den 45
+          meter långa al frescomålningen
+          <i>Staden vid vattnet</i> i Stockholms stadshus. Den stod färdig 1922 och
+          sträcker sig längs den norra väggen av Stora galleriet (även kallat <a href="https://sv.wikipedia.org/wiki/Prinsens_galleri" target="_blank">Prinsens galleri</a>). Målningen
+          skildrar Gamla stan och Söders höjder sedda från den motsatta strandkanten, och är tänkt som en hyllning
+          till Stockholm. <br> Under arbetet lät prinsen sig inspireras av formspråket i Roms barockrum och de kraftfulla
+          färgskalorna på urbinofajans, en keramiktyp som började produceras i den italienska staden Urbino
+          under 1500-talet. Men han beskylldes också för att ha tagit intryck av den samtida kubismen, vars
+          formexperiment uppfattades som provocerande vid tiden.
+          <br>
+          Idag är Staden vid vattnet ett omtyckt offentligt konstverk, som presenteras för
+          besökare under guidade visningar. Tidigt i arbetsprocessen hyste prinsen dock mörka tvivel. I
+          ett brev från Oktober 1917 skrev han:
+          <br>
+          <quote class="citat">”…undrar om det är mycket dåligt. Tänk om det är det, om det bara är en vanlig
+              affisch.</quote>
+          <quote class="citat">Man vet så
+              lite, förrän efter hundra år, o. då ingriper det just inte i ens lif så värst mycket.”</quote>
+          <br>På denna webbsida kan du nu, över hundra år senare, <a href="index.html">utforska sju av Prinsens skisser</a> till den magnifika
+          väggmålningen. 
+          </p></div>
+          </figcaption>
+    
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+
+  </body>
+</html>

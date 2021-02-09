@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staden vid vattnet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel = "icon" href =  
+    "img/SignaturPE.svg" 
+            type = "image/x-icon"> 
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="signature">Prince Eugens Signature</a>
+      <a href="#" class="hide-desktop">
+
+    <nav>
+        <a href="#" class="hide-desktop">
+        <img src="img/ham_menu.svg" alt="toggle menu" class="menu" id="menu">
+    </a>
+      <ul class="show-desktop hide-mobile" id="nav">
+        <li id="exit" class="exit-btn hide-desktop">
+            <img src="img/exit_menu.png" alt="exit menu">
+        </li>
+        <li><a href="stadenvidvattnet.html">Väggmålningen</a></li>
+        <li><a href="index.html">Galleri</a></li>
+ <li><a href="omprojektet.html">Om projektet</a></li>
+      </ul>
+      </nav>
+    </header>
+
+    <a href="index.html" class="header-title">
+      <h2>Public Domain och AR</h2></a
+    > 
+    
+    <figure class="figure-PD">
+      <figcaption class="about-AR-PD"> <p>Under arbetet med detta projekt väcktes många spännande frågor kring materialitet och digitaliseringens möjligheter:
+        Vilka materiella egenskaper följer med in i bildfilen och vilka stängs ute? Hur kan tex. blyertsstreckens spår eller papprets sprödhet förmedlas i det digitala? Och vilka nya möjligheter till spridning och förmedling öppnas upp när skissen övergår till digital form?</p>
+       För att ge användaren full frihet att bruka och utforska skisserna, valde jag att tillgängliggöra skisserna under public domain-dedikation (CC-0). Detta innebär att användaren får kopiera, modifiera, distribuera och framföra verket, även i kommersiellt syfte, utan att fråga om lov. Denna licens frigör alltså hela det digitaliserade konstverkets potential. 
+         <br> Använd gärna skisserna i kreativa och konstnärliga projekt!</p>
+    </figcaption>
+    <div class="public-domain">
+      <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.sv" target="_blank"><img src="img/Creative-Commons-Public-Domain.jpg" alt="CC-0"></a>
+  </div>
+    </figure>
+
+    <figure class="figure-ar">
+      <div class="hand-AR">
+        <img src="img/handAR.jpg" alt="hand and AR Image">
+    </div>
+      <figcaption> <h2>Augmented Reality</h2>     <p>
+        I museimagasin och arkiv runtom i världen finns kulturarvsobjekt som hade kunnat fånga och fascinera allmänheten, men som är begränsade av sin fysiska form, och därmed bundna till sin plats. 
+  Digitaliseringen av skisserna i detta projekt frigör dem från museimagasinet och gör dem tillgängliga för en intresserad allmänhet. Med hjälp av digital teknologi kan de berikas med nya egenskaper. <br> Ett exempel på en teknologi som öppnar upp nya möjligheter för förmedling av konstverken är Augmented Reality (AR). Genom att lagra bildfilerna på en live video feed i en smartphone eller surfplatta, kan de presenteras på nya sätt direkt i användarens omgivning. På bilden visar jag hur AR kan användas för att förmedla skissens storlek och proportioner, materiella egenskaper som annars riskerar att feltolkas. <br>AR-teknologi har potentialen att förändra vad en utställning innebär. Användaren och besökaren smälter samman, och en lägenhet kan förvandlas till ett museum. Dessutom kan kulturarvet göras tillgängligt för den del av allmänheten som inte har möjlighet att utforska det på plats. <br> Möjligheterna till nya former av kulturarvsförmedling är helt enkelt oanade och underutnyttjade.  
+          </p></div>
+          </figcaption>
+          </figure>
+
+          <section class="section-ar-video">
+            <p><span class=emphasize>Varför inte fövandla en mjölkkartong till en konstutställning?</span><br>(Funkar även med sojamjölk)</p>
+          <div class="ar-video"><video width="200" muted autoplay loop>
+            <source src="vid/milkAR.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video></div>
+          </figure>
+      <footer>
+      </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+
+  </body>
+</html>

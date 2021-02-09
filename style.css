@@ -1,0 +1,664 @@
+@font-face {
+  font-family: "Thryomanes Normal";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thryomanes Normal"), url("fonts/thryn___.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Thryomanes Normal";
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.726);
+  display: flex;
+  align-items: center;
+  height: 5.625em;
+  z-index: 7;
+}
+
+.signature {
+  background-image: url("img/SignaturPE.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 3.125em;
+  text-indent: -9999999999px;
+  width: 6.25em;
+  margin-left: 1.5625em;
+}
+
+.hide-mobile {
+  /* fixa till senare */
+  display: none;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: 1.25em;
+}
+
+nav ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 11em;
+  margin: 0;
+  right: 0;
+  list-style: none;
+  text-align: left;
+  background: #f3f3e9;
+}
+
+nav ul li {
+  color: #502e12;
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  margin-bottom: 0.3125em;
+}
+
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu {
+  width: 25px;
+}
+
+.exit-btn {
+  justify-content: flex-end;
+  padding: 1.4em 1.4em 0;
+}
+
+.exit-btn img {
+  width: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 850px) {
+  .signature {
+    background-size: 100%;
+    width: 120px;
+    margin: 0 0 0 65px;
+  }
+
+  .show-desktop {
+    display: block;
+    margin: 0 auto 13% auto;
+    font-size: 1.1em;
+  }
+  .show-desktop a {
+    padding-right: 0em;
+  }
+
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    text-align: right;
+    margin: 1em 2em 1em 0;
+    font-size: 0.8em;
+  }
+  nav ul li a:hover {
+    background-color: inherit;
+    color: #428992;
+    transition-duration: 0.7s;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  nav ul li a {
+    margin: 1em 3em 1em 0em;
+    font-size: 0.9em;
+  }
+}
+/* GALLERY */
+
+.header-title {
+  padding-top: 90px;
+  margin: auto 0;
+  text-decoration: none;
+  color: #428992;
+  font-family: "Thryomanes Normal";
+  font-weight: 900;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.header-title > h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.header-title > h1 {
+  color: #502e12;
+  font-size: 1.1em;
+  margin-bottom: 3px;
+  letter-spacing: 0.15rem;
+}
+
+.header-title > h2 {
+  font-size: 1.7em;
+}
+
+.underline {
+  border-bottom: 0.06em solid #502e12;
+  width: 11em;
+  margin: 2px auto 2px;
+}
+
+.gallery {
+  margin: 2em 0 2em 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column a {
+  display: flex;
+  justify-content: center;
+}
+
+.column img {
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 540px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .column {
+    margin: 0 0.5em 0;
+    flex: 25%;
+    max-width: 30%;
+    padding: 0;
+  }
+
+  .column img {
+    margin-bottom: 1em;
+    padding: 0;
+    vertical-align: middle;
+    width: 100%;
+    transition: transform 0.5s;
+    opacity: 1;
+  }
+
+  .column img:hover {
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3em;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 10em;
+}
+
+footer img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 540px) {
+  footer {
+    position: relative;
+  }
+}
+
+/* ABOUT STADEN VID VATTNET */
+.figure-mural {
+  padding-bottom: 1.5em;
+  font-size: 1.1em;
+}
+
+.figure-mural img {
+  border: none;
+  margin-bottom: 1em;
+}
+
+.figure-mural a {
+  color: #428992;
+}
+
+.figure-mural a:hover {
+  color: black;
+  transition-duration: 0.7s;
+}
+
+.emphasize {
+  font-size: 1.4em;
+  color: #428992;
+}
+
+@media only screen and (min-width: 540px) and (max-width: 1280px) {
+  .figure-mural figcaption {
+    margin: 1em 15% 4em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .figure-mural {
+    display: flex;
+    justify-content: center;
+    margin: 3em 10% 4em;
+    padding-bottom: 3.5em;
+  }
+
+  .figure-mural img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .figure-mural div {
+    width: 40%;
+    padding-right: 2em;
+    border-right: 0.1em solid #502e12;
+  }
+
+  .figure-mural figcaption {
+    width: 50%;
+    margin-left: 2em;
+  }
+
+  .figure-mural figcaption p {
+    margin: 0.7em 0 0 0;
+  }
+}
+
+/* ABOUT PAGE */
+
+.about-project {
+  text-align: left;
+  margin-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 1.1em;
+}
+
+.about-project p {
+  margin-top: 0 ;
+}
+
+.skissernas-link {
+  color: #428992;
+  
+}
+
+.skissernas-link:hover {
+  color: black;
+  transition-duration: 0.7s;
+}
+
+.projectimages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.projectimages img {
+  margin: 1em;
+  border: none;
+}
+
+
+@media only screen and (min-width: 541px) {
+.about-project figcaption {
+  margin: 0 15% 1em;
+}
+}
+
+@media only screen and (min-width: 1280px) {
+  .projectimages img {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    padding-bottom: 0.08em;
+    background-color: #b39c79;
+    border: solid 0.2em #b39c79;
+    width: 50%;
+  }
+}
+/* AR AND PUBLIC DOMAIN PAGE */
+video {
+  border: none;
+}
+
+.figure-PD {
+  text-align: left;
+  margin-bottom: 2em;
+  font-size: 1.1em;
+  margin-top: 1em;
+}
+
+.about-AR-PD p {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.public-domain {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.public-domain a {
+  width: 8em;
+}
+
+.public-domain img {
+  width: 100%;
+  border: none;
+}
+
+.hand-AR img {
+  width: 15em;
+}
+
+.figure-ar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.1em;
+}
+
+.figure-ar h2 {
+  margin-top: 1.5em;
+  color: #428992;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.figure-ar p {
+  margin-top: 0.5em;
+}
+
+.figure-ar img {
+  border: none;
+}
+
+.figure-ar a {
+  color: #428992;
+}
+
+.figure-ar a:hover {
+  color: black;
+  transition-duration: 0.7s;
+}
+
+.section-ar-video p {
+  margin: 0 0 1.8em 0;
+  text-align: center;
+  color: #502e12
+  /* font-size: 1.2em;
+  color: #428992; */
+}
+
+.ar-video {
+  display: flex;
+  justify-content: center;
+}
+
+.ar-video video{
+  border: 3px solid #b39c79;
+}
+
+@media only screen and (min-width: 540px) and (max-width: 1280px) {
+  .figure-ar {
+    display: flex;
+    justify-content: center;
+  }
+  .hand-AR {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hand-AR img {
+    width: 15em;
+  }
+
+  .figure-ar figcaption {
+    margin: 0 15% 1em;
+  }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  
+  .figure-ar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3em 10% 2em;
+  }
+
+  .figure-ar h2 {
+    margin-top: 0.4em;
+    color: #428992;
+    text-align: left;
+  }
+  
+  .figure-ar p {
+    margin-top: 0;
+  }
+
+  .figure-ar img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hand-AR {
+    width: 15em;
+    padding-right: 2em;
+    border-right: 0.1em solid #502e12;
+  }
+
+  .figure-ar figcaption {
+    width: 60%;
+    margin-left: 2em;
+  }
+
+  .figure-ar figcaption p {
+    margin: 0.7em 0 0 0;
+  }
+
+}
+
+
+@media only screen and (min-width: 541px) {
+  .figure-PD {
+    margin: 2.5em 15% 1em;
+  }
+
+  .figure-ar h2 {
+    margin-bottom: 0;
+  }
+
+  .public-domain a {
+    width: 10em;
+  }
+  }
+
+/* SKETCH-PAGES */
+.back-link {
+  margin: 1.5em 0 1em 0;
+}
+
+.back-link a {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #502e12;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  color: #428992;
+  transition-duration: 0.7s;
+}
+
+figure div {
+  display: flex;
+  justify-content: center;
+}
+
+figure img {
+  width: 100%;
+  border: 0.1em solid #b39c79;
+}
+
+figcaption {
+  margin-top: -1em;
+}
+
+.interaction-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.interaction-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.interaction-links a:hover {
+  color: #428992;
+  transition: 0.7s;
+}
+
+.interaction-links img {
+  margin-right: 0.4em;
+}
+
+h4 {
+  margin-top: 0.7em;
+  margin-bottom: 0.2em;
+  font-size: 1.2em;
+  text-align: center;
+  color: #428992;
+}
+
+.artwork-info {
+  margin: 0 0 2em 0;
+  padding: 0;
+  text-align: center;
+  color: #502e12;
+}
+
+figcaption ul li {
+  list-style: none;
+  margin-bottom: 0.3em;
+  text-decoration: none;
+}
+
+figcaption a img {
+  width: 1em;
+  margin-top: 1.5em;
+  border: none;
+}
+
+.download-link {
+  color: #428992;
+  justify-content: center;
+  margin-right: 1.5em;
+}
+
+.download-link {
+  color: #502e12;
+  transition-duration: 0.8s;
+}
+
+@media only screen and (min-width: 541px) {
+  .img-magnifier-container {
+    position: relative;
+  }
+
+  .img-magnifier-glass {
+    position: absolute;
+    border: 0.1875em solid black;
+    border-radius: 50%;
+    cursor: none;
+    width: 6em;
+    height: 6em;
+    margin-left: 15%;
+  }
+
+  figure img {
+    width: 70%;
+    /* margin-left: 15%; */
+    margin-top: 0.5em;
+  }
+
+  .interaction-links {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .download-link {
+    margin-right: 1.5em;
+  }
+}
+/* .gallery-wrapper {
+  display: grid; */
+/* repeat to make it responsive - auto-fill minimum 1fr = it fills the page when really small */
+/* This is also where the layout starts covering whole viewport */
+/* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 10px;
+} */
+
+/* .gallery-wrapper div {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.gallery-wrapper img {
+  width: 100%;
+}
+
+.horizontal {
+  grid-column: span 2;
+} */

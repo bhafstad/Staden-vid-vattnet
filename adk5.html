@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staden vid vattnet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel = "icon" href =  
+    "img/SignaturPE.svg" 
+            type = "image/x-icon"> 
+    <script src="magglass.js"> </script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="signature">Prince Eugens Signature</a>
+      <a href="#" class="hide-desktop">
+
+    <nav>
+        <a href="#" class="hide-desktop">
+        <img src="img/ham_menu.svg" alt="toggle menu" class="menu" id="menu">
+    </a>
+      <ul class="show-desktop hide-mobile" id="nav">
+        <li id="exit" class="exit-btn hide-desktop">
+            <img src="img/exit_menu.png" alt="exit menu">
+        </li>
+        <li><a href="stadenvidvattnet.html">Väggmålningen</a></li>
+        <li><a href="stadenvidvattnet.html">AR-experiment</a></li>
+        <li><a href="omprojektet.html">Om projektet</a></li>
+      </ul>
+      </nav>
+    </header>
+
+    <a href="index.html" class="header-title"><h1>Prins Eugen</h1>
+      <h3 class="underline"></h3>
+      <h2>Skisser till Staden vid vattnet</h2></a
+    > 
+    
+    <figure>
+       <div class="img-magnifier-container"><img id="sketch" src="img/ADK5__001_0.jpg" alt="ADK 5"></div>
+        
+        <figcaption>
+          <ul class="interaction-links"><li><a href="img/ADK5__001_0.jpg" download class="download-link"><img src="img/icon_download.png" alt="download link">Spara</a></li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=bjornhafstad.xyz/adk5.html" target="_blank" class="share-facebook-link">
+              <img src="img/facebook.svg" alt="facebook logo">Dela
+            </a></li>
+          </ul>
+            <h4>
+                Skiss ADK 5
+            </h4>
+                <ul class="artwork-info">
+                  <li><i>1916</i>
+                  </li>
+                    <li>18,6 x 40,5 cm
+                    </li>
+                    <li>Akvarell på papper, på papp
+                    </li>
+                    <li class="back-link"><a href="index.html">⬅ Tillbaka till galleri</a></li>
+                </ul>
+            </div>
+        </figcaption>
+    </figure>
+    <script>
+      window.addEventListener('load', function(){
+          magnify("sketch", 3);       
+      }, false);
+  </script>
+  
+      <footer>
+      </footer>
+
+      <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+  </body>
+</html>

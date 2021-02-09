@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staden vid vattnet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel = "icon" href =  
+    "img/SignaturPE.svg" 
+            type = "image/x-icon"> 
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="signature">Prince Eugens Signature</a>
+      <a href="#" class="hide-desktop">
+
+    <nav>
+        <a href="#" class="hide-desktop">
+        <img src="img/ham_menu.svg" alt="toggle menu" class="menu" id="menu">
+    </a>
+      <ul class="show-desktop hide-mobile" id="nav">
+        <li id="exit" class="exit-btn hide-desktop">
+            <img src="img/exit_menu.png" alt="exit menu">
+        </li>
+        <li><a href="stadenvidvattnet.html">Väggmålningen</a></li>
+        <li><a href="publicdomainochar.html">Public Domain och AR</a></li>
+        <li><a href="omprojektet.html">Om projektet</a></li>
+      </ul>
+      </nav>
+    </header>
+
+    <a href="index.html" class="header-title"><h1>Prins Eugen</h1>
+      <h3 class="underline"></h3>
+      <h2>Skisser till Staden vid vattnet</h2></a
+    >
+
+    <section class="gallery">
+      <div class="column">
+      <a href="adk4.html"><img
+        src="img/ADK4__001_0.png"
+        alt="Skiss till Staden vid vattnet, av Prins Eugen"
+      /></a><a href="adk16.html"><img
+        src="img/ADK16__001_0.png"
+        alt="Skiss till Staden vid vattnet, av Prins Eugen"
+      /></a></div>
+      <div class="column"><a href="adk18.html"><img
+        src="img/ADK18__001_0.png"
+        alt="Skiss till Staden vid vattnet, av Prins Eugen"
+      /></a><a href="adk2599.html"><img
+        src="img/ADK2599__001_0.png"
+        alt="Skiss till Staden vid vattnet, av Prins Eugen"
+      /></a><a href="adk5.html"><img
+        src="img/ADK5__001_0.png"
+        alt="Skiss till Staden vid vattnet, av Prins Eugen"
+      /></a></div>
+      <div class="column"><a href="adk2602.html"><img
+        src="img/ADK2602__001_0.png"
+        alt="Skiss till Staden vid vattnet, av Prins Eugen"
+      /></a><a href="adk2604.html"><img
+      src="img/ADK2604__001_0.png"
+      alt="Skiss till Staden vid vattnet, av Prins Eugen"
+    /></a>
+    </div>
+      </section> 
+    
+      <footer>
+        <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.sv" target="_blank"><img src="img/Creative-Commons-Public-Domain.jpg" alt="CC-0"></a>
+      </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+
+  </body>
+</html>
